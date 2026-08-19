@@ -323,39 +323,146 @@
             <h2>On se retrouve<br />après la tombée<br />du jour.</h2>
           </div>
           <div class="map">
+            <div class="map__topbar" aria-hidden="true">
+              <span>Carte du quartier</span>
+              <span>Paris · 02</span>
+            </div>
             <div
               class="map__graphic"
               role="img"
-              aria-label="Plan indicatif du quartier Sentier à Paris"
+              aria-label="Carte indicative du quartier Sentier à Paris, entre les rues de Cléry, Réaumur et le boulevard de Sébastopol"
             >
-              <svg viewBox="0 0 720 500" aria-hidden="true">
-                <g class="map__streets">
+              <svg viewBox="0 0 760 520" aria-hidden="true">
+                <defs>
+                  <pattern
+                    id="map-grid"
+                    width="38"
+                    height="38"
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <path d="M38 0H0V38" />
+                  </pattern>
+                  <path id="street-clery" d="M-30 125C175 166 413 122 790 82" />
                   <path
-                    d="M-30 56 170 91 345 48 760 120M-50 176 181 211 371 169 752 230M-20 342 178 288 376 353 744 315M-20 464 220 417 395 479 760 421"
+                    id="street-aboukir"
+                    d="M-35 324C202 300 448 232 795 184"
                   />
                   <path
-                    d="M82-20 120 530M217-20 260 530M365-20 333 530M507-20 550 530M660-20 612 530"
+                    id="street-reaumur"
+                    d="M-35 444C225 434 514 403 795 366"
                   />
                   <path
-                    d="M-50 276 120 194 234 85M116 530 244 373 426 233 551-20M362 530 452 413 604 292 760 90"
+                    id="street-sentier"
+                    d="M245-30C246 128 270 328 301 550"
                   />
+                  <path
+                    id="street-saint-denis"
+                    d="M603-30C585 169 608 360 651 550"
+                  />
+                  <path
+                    id="street-sebastopol"
+                    d="M704-30C689 170 714 363 751 550"
+                  />
+                </defs>
+
+                <rect class="map__grid" width="760" height="520" />
+                <g class="map__blocks">
+                  <path d="M18 22H222L224 121C150 130 84 127 18 113Z" />
+                  <path d="M272 18H577L565 102C467 109 365 124 279 126Z" />
+                  <path
+                    d="M24 153C94 165 158 169 226 160L242 278C164 295 91 302 24 304Z"
+                  />
+                  <path
+                    d="M283 153C370 143 466 126 558 119L572 212C468 231 378 254 294 273Z"
+                  />
+                  <path d="M626 117L684 109L691 175L622 188Z" />
+                  <path
+                    d="M31 344C107 342 181 331 248 318L264 413C184 424 104 430 31 427Z"
+                  />
+                  <path
+                    d="M309 309C399 287 486 264 579 250L596 376C495 389 404 399 326 407Z"
+                  />
+                  <path d="M627 239L695 222L718 350L640 363Z" />
+                  <path d="M39 463C109 462 191 455 270 445L281 510H39Z" />
+                  <path d="M335 440C426 432 518 419 605 404L623 510H346Z" />
                 </g>
-                <path
-                  class="map__route"
-                  d="M-20 397 168 314 320 301 482 218 740 181"
-                />
-                <g class="map__pin" transform="translate(474 221)">
-                  <circle r="30" />
-                  <circle r="9" />
+
+                <g class="map__roads">
+                  <use href="#street-clery" />
+                  <use href="#street-aboukir" />
+                  <use href="#street-reaumur" class="map__road--major" />
+                  <use href="#street-sentier" />
+                  <use href="#street-saint-denis" />
+                  <use href="#street-sebastopol" class="map__road--major" />
+                  <path d="M461-20C469 82 481 143 492 224" />
+                  <path d="M405 245C402 307 411 364 423 414" />
+                  <path d="M532 24C532 94 542 151 554 219" />
+                  <path d="M520 233C528 278 533 322 538 386" />
                 </g>
-                <text x="497" y="214">VERTEX</text>
+
+                <g class="map__street-labels">
+                  <text dy="-8">
+                    <textPath href="#street-clery" startOffset="8%">
+                      RUE DE CLÉRY
+                    </textPath>
+                  </text>
+                  <text dy="-8">
+                    <textPath href="#street-aboukir" startOffset="12%">
+                      RUE D’ABOUKIR
+                    </textPath>
+                  </text>
+                  <text dy="-10">
+                    <textPath href="#street-reaumur" startOffset="7%">
+                      RUE RÉAUMUR
+                    </textPath>
+                  </text>
+                  <text dy="-8">
+                    <textPath href="#street-sentier" startOffset="18%">
+                      RUE DU SENTIER
+                    </textPath>
+                  </text>
+                  <text dy="-8">
+                    <textPath href="#street-saint-denis" startOffset="15%">
+                      RUE SAINT-DENIS
+                    </textPath>
+                  </text>
+                  <text dy="-10">
+                    <textPath href="#street-sebastopol" startOffset="7%">
+                      BD. DE SÉBASTOPOL
+                    </textPath>
+                  </text>
+                  <text x="470" y="74">RUE DU CAIRE</text>
+                  <text x="422" y="338">RUE DU NIL</text>
+                </g>
+
+                <path class="map__area" d="M279 158 553 119 577 247 314 309Z" />
+                <g class="map__area-label" transform="translate(363 196)">
+                  <rect width="151" height="48" />
+                  <text x="14" y="20">SECTEUR SENTIER</text>
+                  <text x="14" y="34">ZONE INDICATIVE</text>
+                </g>
+
+                <g class="map__station" transform="translate(286 411)">
+                  <circle r="12" />
+                  <text x="-4" y="4">M</text>
+                  <text x="18" y="4">SENTIER</text>
+                </g>
+                <g class="map__station" transform="translate(668 375)">
+                  <circle r="12" />
+                  <text x="-4" y="4">M</text>
+                  <text x="18" y="4">RÉAUMUR — SÉBASTOPOL</text>
+                </g>
+
+                <g class="map__north" transform="translate(35 35)">
+                  <path d="M0 22 8 0l8 22-8-5Z" />
+                  <text x="4" y="36">N</text>
+                </g>
               </svg>
             </div>
-            <span class="map__caption"
-              >Paris 2<sup>e</sup> · Sentier<br /><small
-                >ADRESSE À CONFIRMER</small
-              ></span
-            >
+            <div class="map__footer">
+              <span>48.868° N · 2.349° E</span>
+              <span>Adresse exacte à confirmer</span>
+            </div>
           </div>
           <div class="visit__details">
             <div>
