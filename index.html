@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0b0a" />
+    <meta
+      name="description"
+      content="VERTEX — club gaming nocturne à Paris. 40 postes premium, suites privées et café."
+    />
+    <title>VERTEX® — Club gaming, Paris</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/vertex-hero-v2.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/manrope-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/ibm-plex-mono-400-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Aller au contenu</a>
+    <header class="site-header">
+      <div class="shell navigation">
+        <a class="brand" href="#top" aria-label="VERTEX, accueil">
+          <svg viewBox="0 0 30 30" aria-hidden="true">
+            <path d="M3 4h8l4 9 4-9h8L17.5 26h-5z" /></svg
+          ><span>VERTEX</span>
+        </a>
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="#club">Le club</a><a href="#spaces">Espaces</a
+          ><a href="#rates">Tarifs</a
+          ><a href="#location">Paris 2<sup>e</sup></a>
+        </nav>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span class="menu-toggle__label">Menu</span
+          ><span class="menu-toggle__icon" aria-hidden="true"></span>
+        </button>
+        <a class="nav-book" href="#book"
+          ><span class="nav-book__label">Réserver</span
+          ><span class="nav-book__icon" aria-hidden="true">↗</span></a
+        >
+      </div>
+      <nav
+        class="mobile-nav"
+        id="mobile-nav"
+        aria-label="Navigation mobile"
+        hidden
+      >
+        <a href="#club"><span>01</span>Le club</a
+        ><a href="#spaces"><span>02</span>Espaces</a
+        ><a href="#rates"><span>03</span>Tarifs</a
+        ><a href="#location"><span>04</span>Paris 2<sup>e</sup></a>
+      </nav>
+    </header>
+
+    <main id="content" tabindex="-1">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <picture class="hero__image" aria-hidden="true">
+          <source
+            type="image/webp"
+            srcset="
+              assets/images/vertex-hero-1024.webp 1024w,
+              assets/images/vertex-hero-v2.webp   1983w
+            "
+            sizes="100vw"
+          />
+          <img
+            src="assets/images/vertex-hero-fallback.jpg"
+            alt=""
+            width="1983"
+            height="793"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </picture>
+        <div class="hero__grain" aria-hidden="true"></div>
+        <div class="shell hero__layout">
+          <div class="hero__status">
+            <span class="live-dot"></span><span>Paris · 2<sup>e</sup></span
+            ><span>Horaires indicatifs<br />10 h — 2 h</span>
+          </div>
+          <div class="hero__main">
+            <p class="eyebrow">Club gaming nocturne — Depuis 2024</p>
+            <h1 id="hero-title">Jouez<br /><span>hors cadre.</span></h1>
+            <div class="hero__bottom">
+              <p>
+                Quarante machines. Trois atmosphères.<br />Une nuit qui ne vous
+                demande pas de rentrer tôt.
+              </p>
+              <a class="cta" href="#book"
+                ><span class="cta__label">Choisir mon poste</span
+                ><span class="cta__icon" aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="hero__index" aria-hidden="true">
+          <span>48°51' N</span><span>VTX / 001</span
+          ><span>Faire défiler ↓</span>
+        </div>
+      </section>
+
+      <div class="signal" aria-hidden="true">
+        <div class="signal__track">
+          <div class="signal__set">
+            <span>RTX 4070</span><span class="signal__spark">✦</span
+            ><span>ÉCRANS 240 HZ</span><span class="signal__spark">✦</span
+            ><span>PING MINIMAL</span><span class="signal__spark">✦</span
+            ><span>CAFÉ MAXIMAL</span><span class="signal__spark">✦</span>
+          </div>
+          <div class="signal__set">
+            <span>RTX 4070</span><span class="signal__spark">✦</span
+            ><span>ÉCRANS 240 HZ</span><span class="signal__spark">✦</span
+            ><span>PING MINIMAL</span><span class="signal__spark">✦</span
+            ><span>CAFÉ MAXIMAL</span><span class="signal__spark">✦</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="manifesto" id="club">
+        <div class="shell manifesto__grid">
+          <p class="eyebrow eyebrow--dark">Pourquoi Vertex</p>
+          <div>
+            <h2>Pas une salle de jeu.<br /><span>Un terrain de nuit.</span></h2>
+            <div class="manifesto__copy">
+              <p>
+                Pensé pour celles et ceux qui sentent la différence entre «
+                puissant » et parfaitement réglé. Ici, tout disparaît derrière
+                l’expérience : la latence, le bruit, l’inconfort.
+              </p>
+              <a class="arrow-link arrow-link--dark" href="#spaces"
+                >Explorer le club <span aria-hidden="true">↓</span></a
+              >
+            </div>
+          </div>
+          <aside class="manifesto__note">
+            <span>01</span>
+            <p>Pas de RGB arc-en-ciel.<br />Juste ce qu’il faut de lumière.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="spaces" id="spaces" aria-labelledby="spaces-title">
+        <div class="shell section-intro">
+          <p class="eyebrow">Les espaces / 03</p>
+          <h2 id="spaces-title">Votre jeu.<br />Votre zone.</h2>
+          <p class="section-intro__copy">
+            Solo, escouade ou canapé — changez de décor sans quitter la nuit.
+          </p>
+        </div>
+        <div class="shell space-stack">
+          <article class="space space--main">
+            <div class="space__visual">
+              <picture
+                ><source
+                  type="image/webp"
+                  srcset="
+                    assets/images/main-floor-960.webp  960w,
+                    assets/images/main-floor-v2.webp  1881w
+                  "
+                  sizes="(max-width: 640px) calc(100vw - 30px), (max-width: 1440px) calc(100vw - 80px), 1360px" />
+                <img
+                  src="assets/images/main-floor-v2.jpg"
+                  alt="La salle principale et ses rangées de postes gaming"
+                  width="1881"
+                  height="836"
+                  loading="lazy"
+                  decoding="async" /></picture
+              ><span class="space__tag">30 postes</span>
+            </div>
+            <div class="space__info">
+              <span class="space__number">01</span>
+              <div>
+                <h3>L’Arène</h3>
+                <p>
+                  Trente postes impeccables, alignés pour le jeu compétitif.
+                </p>
+              </div>
+              <strong>8 €<small>/ heure</small></strong>
+            </div>
+          </article>
+          <article class="space space--focus">
+            <div class="space__visual">
+              <picture
+                ><source
+                  type="image/webp"
+                  srcset="
+                    assets/images/private-suite-720.webp  720w,
+                    assets/images/private-suite-v2.webp  1122w
+                  "
+                  sizes="(max-width: 640px) calc(100vw - 30px), 52vw" />
+                <img
+                  src="assets/images/private-suite-v2.jpg"
+                  alt="Une suite gaming privée, acoustique et calme"
+                  width="1122"
+                  height="1402"
+                  loading="lazy"
+                  decoding="async" /></picture
+              ><span class="space__tag">Silence +</span>
+            </div>
+            <div class="space__info">
+              <span class="space__number">02</span>
+              <div>
+                <h3>Focus</h3>
+                <p>
+                  Porte fermée. Son précis. Personne dans votre champ de vision.
+                </p>
+              </div>
+              <strong>16 €<small>/ heure</small></strong>
+            </div>
+          </article>
+          <article class="space space--console">
+            <div class="space__visual">
+              <picture
+                ><source
+                  type="image/webp"
+                  srcset="
+                    assets/images/console-lounge-720.webp  720w,
+                    assets/images/console-lounge-v2.webp  1316w
+                  "
+                  sizes="(max-width: 640px) calc(100vw - 30px), 34vw" />
+                <img
+                  src="assets/images/console-lounge-v2.jpg"
+                  alt="Le salon console avec canapé et grand écran OLED"
+                  width="1316"
+                  height="1195"
+                  loading="lazy"
+                  decoding="async" /></picture
+              ><span class="space__tag">Console + OLED</span>
+            </div>
+            <div class="space__info">
+              <span class="space__number">03</span>
+              <div>
+                <h3>Le Salon</h3>
+                <p>
+                  Grand écran, canapé profond. La compétition en chaussettes.
+                </p>
+              </div>
+              <strong>12 €<small>/ heure</small></strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cafe" aria-label="Le café Vertex">
+        <div class="cafe__photo" aria-hidden="true"></div>
+        <div class="shell cafe__content">
+          <p class="eyebrow">Interlude / Le café</p>
+          <blockquote>
+            « Une bonne nuit commence par un bon espresso. »
+          </blockquote>
+          <div class="cafe__meta">
+            <p>
+              Café de spécialité, plats chauds et service directement à votre
+              poste.
+            </p>
+            <span>CUISINE · JUSQU’À 01:30</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="rates" id="rates" aria-labelledby="rates-title">
+        <div class="shell">
+          <div class="rates__head">
+            <p class="eyebrow eyebrow--dark">Tarifs / Sans abonnement</p>
+            <h2 id="rates-title">Entrez.<br />Restez un peu.</h2>
+          </div>
+          <div class="rate-list">
+            <a class="rate" href="#book"
+              ><span class="rate__num">01</span
+              ><span class="rate__name">Une heure</span
+              ><span class="rate__detail">Pour tester — salle principale</span
+              ><strong>8 €</strong
+              ><span class="rate__arrow" aria-hidden="true">↗</span></a
+            >
+            <a class="rate rate--selected" href="#book"
+              ><span class="rate__num">02</span
+              ><span class="rate__name">Toute la nuit</span
+              ><span class="rate__detail">20 h — 6 h · boisson offerte</span
+              ><strong>25 €</strong
+              ><span class="rate__arrow" aria-hidden="true">↗</span></a
+            >
+            <a class="rate" href="#book"
+              ><span class="rate__num">03</span
+              ><span class="rate__name">Pack dix heures</span
+              ><span class="rate__detail"
+                >À utiliser librement pendant 30 jours</span
+              ><strong>65 €</strong
+              ><span class="rate__arrow" aria-hidden="true">↗</span></a
+            >
+          </div>
+          <p class="rates__footnote">
+            Équipements, capacités et tarifs à confirmer avec le club.
+          </p>
+        </div>
+      </section>
+
+      <section class="visit" id="location">
+        <div class="shell visit__grid">
+          <div class="visit__title">
+            <p class="eyebrow">Paris 2<sup>e</sup> · Sentier</p>
+            <h2>On se retrouve<br />après la tombée<br />du jour.</h2>
+          </div>
+          <div class="map">
+            <div
+              class="map__graphic"
+              role="img"
+              aria-label="Plan indicatif du quartier Sentier à Paris"
+            >
+              <svg viewBox="0 0 720 500" aria-hidden="true">
+                <g class="map__streets">
+                  <path
+                    d="M-30 56 170 91 345 48 760 120M-50 176 181 211 371 169 752 230M-20 342 178 288 376 353 744 315M-20 464 220 417 395 479 760 421"
+                  />
+                  <path
+                    d="M82-20 120 530M217-20 260 530M365-20 333 530M507-20 550 530M660-20 612 530"
+                  />
+                  <path
+                    d="M-50 276 120 194 234 85M116 530 244 373 426 233 551-20M362 530 452 413 604 292 760 90"
+                  />
+                </g>
+                <path
+                  class="map__route"
+                  d="M-20 397 168 314 320 301 482 218 740 181"
+                />
+                <g class="map__pin" transform="translate(474 221)">
+                  <circle r="30" />
+                  <circle r="9" />
+                </g>
+                <text x="497" y="214">VERTEX</text>
+              </svg>
+            </div>
+            <span class="map__caption"
+              >Paris 2<sup>e</sup> · Sentier<br /><small
+                >ADRESSE À CONFIRMER</small
+              ></span
+            >
+          </div>
+          <div class="visit__details">
+            <div>
+              <span>Horaires indicatifs</span>
+              <p>
+                Dim — Jeu&nbsp;&nbsp;10 h — 2 h<br />Ven — Sam&nbsp;&nbsp;10 h —
+                6 h
+              </p>
+            </div>
+            <div>
+              <span>Contact</span>
+              <p class="visit__pending">
+                Téléphone et e-mail<br />à confirmer avec le club
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking" id="book" aria-labelledby="booking-title">
+        <div class="shell booking__grid">
+          <div class="booking__intro">
+            <p class="eyebrow eyebrow--dark">Réservation</p>
+            <h2 id="booking-title">Votre poste<br />vous attend.</h2>
+            <p class="booking__note">
+              Indiquez l’espace et l’horaire souhaités. La demande sera
+              transmise au club.
+            </p>
+          </div>
+          <!-- TODO CLIENT: renseigner data-endpoint avec l’URL réelle du service de réservation. -->
+          <form
+            class="booking-form"
+            id="booking-form"
+            action="#"
+            method="post"
+            data-endpoint=""
+          >
+            <label
+              ><span>01 / Votre nom</span
+              ><input
+                type="text"
+                name="name"
+                autocomplete="name"
+                placeholder="Camille Dupont"
+                required
+            /></label>
+            <label
+              ><span>02 / Votre e-mail</span
+              ><input
+                type="email"
+                name="email"
+                autocomplete="email"
+                placeholder="camille@email.fr"
+                required
+            /></label>
+            <label
+              ><span>03 / Votre espace</span
+              ><select name="booking">
+                <option>L’Arène — poste gaming</option>
+                <option>Focus — suite privée</option>
+                <option>Le Salon — console</option>
+                <option>Événement / bootcamp</option>
+              </select></label
+            >
+            <label
+              ><span>04 / Quand ?</span
+              ><input type="text" name="date" placeholder="Vendredi, vers 22 h"
+            /></label>
+            <button class="booking-form__submit" type="submit">
+              <span class="booking-form__submit-label">Envoyer la demande</span
+              ><span class="booking-form__submit-icon" aria-hidden="true"
+                >↗</span
+              >
+            </button>
+            <p class="booking-form__status" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__top">
+        <a class="site-footer__wordmark" href="#top">VERTEX<sup>®</sup></a
+        ><a class="site-footer__back" href="#top">Retour en haut ↑</a>
+      </div>
+      <div class="shell site-footer__bottom">
+        <span>© 2026 VERTEX CYBER CLUB</span>
+        <div><span>Réseaux sociaux · à confirmer</span></div>
+        <span class="site-footer__locale">PARIS · FR</span>
+      </div>
+    </footer>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
